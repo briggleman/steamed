@@ -20,7 +20,7 @@ Calling steamed.sales() will return an array of lists containing information on 
 
 Current information returned is:
 
-game - name of the game on sale
+game - name of the game on sale&nspb
 img - url to the Steam 120px thumbnail
 appid - application id of the game
 full - full price of the game (returned as a decimal)
