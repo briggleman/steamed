@@ -20,14 +20,14 @@ Calling steamed.sales() will return an array of lists containing information on 
 
 Current information returned is:
 
-+game - name of the game on sale
-+img - url to the Steam 120px thumbnail
-+appid - application id of the game
-+full - full price of the game (returned as a decimal)
-+sale - sale price of the game
++ game - name of the game on sale
++ img - url to the Steam 120px thumbnail
++ appid - application id of the game
++ full - full price of the game (returned as a decimal)
++ sale - sale price of the game
 
 <h2>Future Revisions</h2>
 Future enhancements include the following:
 
-+pct - calculated percentage of the discount
-+type - content type (e.g. software, dlc, game)
++ pct - calculated percentage of the discount
++ type - content type (e.g. software, dlc, game)
