@@ -10,11 +10,15 @@ Current installation can be done by downloading steamed and placing it in approp
 <h2>Usage</h2>
 To use steamed simply include it in your project:
 
+```python
 import steamed
+```
 
 Then call the sales function:
 
-sales = steamed.sales()
+```
+steamed.sales()
+```
 
 Calling steamed.sales() will return an array of lists containing information on all the games currently on sale.
 
