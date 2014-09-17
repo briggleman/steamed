@@ -4,8 +4,11 @@ steamed
 Spider for scraping Steam sales data from store.steampowered.com
 
 ## Installation
-Currently steamed is only available on github but will be available via pip shortly.
-Current installation can be done by downloading steamed and placing it in appropriate folder for access.
+To install steamed, simply:
+
+```python
+pip install steamed
+```
 
 ## Usage
 To use steamed simply include it in your project:
@@ -29,9 +32,9 @@ Current information returned is:
 + appid - application id of the game
 + full - full price of the game (returned as a decimal)
 + sale - sale price of the game
++ pct - calculated percentage of the discount
 
 ## Future Revisions
 Future enhancements include the following:
 
-+ pct - calculated percentage of the discount
 + type - content type (e.g. software, dlc, game)

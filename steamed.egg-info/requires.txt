@@ -1,2 +1,2 @@
-requests>=2.2.1
-bs4>=4.0.0
+requests>=2.4.1
+beautifulsoup>=4.3.2
