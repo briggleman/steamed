@@ -9,7 +9,7 @@ usage:
 """
 
 __title__ = 'steamed'
-__version__ = '1.1.1'
+__version__ = '1.1.2'
 __author__ = 'Ben Riggleman'
 __license__ = 'Apache 2.0'
 __copyright__ = 'Copyright 2014 Ben Riggleman'
