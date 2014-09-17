@@ -1,13 +1,17 @@
-from distutils.core import setup
+from authy import __version__
+from setuptools import setup, find_packages
+
 setup(
-  name = 'steamed',
-  packages = ['steamed'],
-  version = '1.0',
-  description = 'steamed: a web scraper for steam sales on store.steampowered.com,
-  author = 'Ben Riggleman',
-  author_email = 'ben.riggleman@gmail.com',
-  url = 'https://github.com/briggleman/steamed',
-  download_url = 'https://github.com/briggleman/steamed/tarball/1.0',
-  keywords = ['steam', 'steam sales', 'sales', 'spider', 'web scraper', 'gaben', 'python'],
-  classifiers = [],
-)
+    name = "steamed",
+    version = __version__,
+    description = "Steam sales web scraper",
+    author = "Ben Riggleman",
+    author_email = "ben.riggleman@gmail.com",
+    url = "https://github.com/briggleman/steamed",
+    keywords = ["steamed", "steam sales", "steam python", "web scraper", "spider"],
+    install_requires = ["requests>=2.2.1", "bs4>=4.0.0"],
+    packages = find_packages(),
+    classifiers = [],
+    long_description = """\
+    steamed: Steam sales web scraper for store.steampowered.com
+""" )
