@@ -14,7 +14,8 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.pyc
-
+/steamed.egg-info
+/dist
 # =========================
 # Operating System Files
 # =========================
