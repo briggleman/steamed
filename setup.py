@@ -1,4 +1,4 @@
-from authy import __version__
+from steamed import __version__
 from setuptools import setup, find_packages
 
 setup(
