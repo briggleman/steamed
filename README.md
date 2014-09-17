@@ -1,9 +1,7 @@
 # steamed
-=======
 
 Spider for scraping Steam sales data from store.steampowered.com
 
-=======
 ## Installation
 To install steamed, simply:
 
