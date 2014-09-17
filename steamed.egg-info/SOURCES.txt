@@ -1,9 +1,0 @@
-setup.cfg
-setup.py
-steamed/__init__.py
-steamed/helpers.py
-steamed.egg-info/PKG-INFO
-steamed.egg-info/SOURCES.txt
-steamed.egg-info/dependency_links.txt
-steamed.egg-info/requires.txt
-steamed.egg-info/top_level.txt
