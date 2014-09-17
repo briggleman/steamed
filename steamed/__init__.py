@@ -48,6 +48,7 @@ def sales():
                     values['img'] = str(img)
                     values['appid'] = re.search(RGXIMG, str(img)).group()
                     blank, values['full'], values['sale'] = prices.split('$')
+                    values['pct'] = format(((float(values['sale'])/float(values['full'])) * 100), '.0f')
 
                     items.append(values)
                 except:
