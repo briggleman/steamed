@@ -12,5 +12,5 @@ setup(
     install_requires = ["requests>=2.4.1", "beautifulsoup>=4.3.2"],
     packages = find_packages(),
     classifiers = [],
-    long_description=open("README.txt").read()
+    long_description=open("README.md").read()
 )
