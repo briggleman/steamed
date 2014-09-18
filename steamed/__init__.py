@@ -9,7 +9,7 @@ usage:
 """
 
 __title__ = 'steamed'
-__version__ = '1.1.2'
+__version__ = '1.1.3'
 __author__ = 'Ben Riggleman'
 __license__ = 'Apache 2.0'
 __copyright__ = 'Copyright 2014 Ben Riggleman'
@@ -48,7 +48,7 @@ def sales():
                     values['img'] = str(img)
                     values['appid'] = re.search(RGXIMG, str(img)).group()
                     blank, values['full'], values['sale'] = prices.split('$')
-                    values['pct'] = format(((float(values['sale'])/float(values['full'])) * 100), '.0f')
+                    values['pct'] = format((((float(values['full']) - float(values['sale']))/float(values['full'])) * 100), '.0f')
 
                     items.append(values)
                 except:
