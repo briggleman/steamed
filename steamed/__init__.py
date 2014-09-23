@@ -9,7 +9,7 @@ usage:
 """
 
 __title__ = 'steamed'
-__version__ = '1.1.3'
+__version__ = '1.2'
 __author__ = 'Ben Riggleman'
 __license__ = 'Apache 2.0'
 __copyright__ = 'Copyright 2014 Ben Riggleman'
@@ -42,13 +42,28 @@ def sales():
             for game in games:
                 try:
                     values = {}
+                    platforms = []
                     prices = game.find('div', {'class':'search_price'}).text
                     img = game.find('img', {'width':'120'})['src']
-                    values['game'] = game.find('h4').text
+                    values['game'] = game.find('span', {'class':'title'}).text
                     values['img'] = str(img)
                     values['appid'] = re.search(RGXIMG, str(img)).group()
                     blank, values['full'], values['sale'] = prices.split('$')
-                    values['pct'] = format((((float(values['full']) - float(values['sale']))/float(values['full'])) * 100), '.0f')
+                    values['pct'] = game.find('div', {'class':'search_discount'}).text.strip()
+                    values['released'] = game.find('div', {'class':'search_released'}).text
+                    
+                    if not game.find('span', {'class':'search_review_summary'}) is None:
+                        values['review'], values['summary'] = game.find('span', {'class':'search_review_summary'})['data-store-tooltip'].split('<br>')
+                    else:
+                        values['review'] = ''
+                        values['summary'] = ''
+
+                    if not game.find('span', {'class':'platform_img win'}) is None: platforms.append('win')
+                    if not game.find('span', {'class':'platform_img mac'}) is None: platforms.append('mac')
+                    if not game.find('span', {'class':'platform_img steamplay'}) is None: platforms.append('steamplay')
+                    if not game.find('span', {'class':'platform_img linux'}) is None: platforms.append('linux')
+
+                    values['platforms'] = platforms
 
                     items.append(values)
                 except:

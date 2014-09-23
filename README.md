@@ -32,8 +32,7 @@ Current information returned is:
 + full - full price of the game (returned as a decimal)
 + sale - sale price of the game
 + pct - calculated percentage of the discount
-
-Future Revisions
-Future enhancements include the following:
-
-+ type - content type (e.g. software, dlc, game)
++ released - release date of the app
++ review - Steam user review score (e.g. Positive, Very Positive)
++ summary - Steam user review summary
++ platforms - an array of platforms the app is on (e.g. win, steam, linix, steamplay)
