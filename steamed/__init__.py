@@ -9,7 +9,7 @@ usage:
 """
 
 __title__ = 'steamed'
-__version__ = '1.2'
+__version__ = '1.2.1'
 __author__ = 'Ben Riggleman'
 __license__ = 'Apache 2.0'
 __copyright__ = 'Copyright 2014 Ben Riggleman'
@@ -43,7 +43,7 @@ def sales():
                 try:
                     values = {}
                     platforms = []
-                    prices = game.find('div', {'class':'search_price'}).text
+                    prices = game.find('div', {'class':'search_price'}).text.strip()
                     img = game.find('img', {'width':'120'})['src']
                     values['game'] = game.find('span', {'class':'title'}).text
                     values['img'] = str(img)
