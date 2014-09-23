@@ -35,4 +35,4 @@ Current information returned is:
 + released - release date of the app
 + review - Steam user review score (e.g. Positive, Very Positive)
 + summary - Steam user review summary
-+ platforms - an array of platforms the app is on (e.g. win, steam, linix, steamplay)
++ platforms - an array of platforms the app is on (e.g. win, steam, linux, steamplay)
