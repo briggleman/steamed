@@ -9,7 +9,7 @@ usage:
 """
 
 __title__ = 'steamed'
-__version__ = '1.2.1'
+__version__ = '1.2.2'
 __author__ = 'Ben Riggleman'
 __license__ = 'Apache 2.0'
 __copyright__ = 'Copyright 2014 Ben Riggleman'
@@ -37,7 +37,7 @@ def sales():
         html = requests.get(uri)
 
         if html.status_code == 200:
-            games = BeautifulSoup(html.content).find_all('a', {'class':'search_result_row'})
+            games = BeautifulSoup(html.content.decode('UTF-8')).find_all('a', {'class':'search_result_row'})
 
             for game in games:
                 try:
