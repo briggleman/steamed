@@ -1,4 +1,4 @@
-# steamed
+# steamed [![Build Status](https://travis-ci.org/briggleman/steamed.svg?branch=master)](https://travis-ci.org/briggleman/steamed)
 
 Spider for scraping Steam sales data from store.steampowered.com
 
